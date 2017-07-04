@@ -7,9 +7,9 @@ permalink: /documentation/trowel-core/use-a-component/config/
 
 ## syntax
 ### Separators
-*Trowel* is based on the BEM (Block - Element - Modifier) principle. Blocks and Elements are static and setted by the developer that created the *Trowel component*.
+*Trowel* is based on the BEM (Block - Element - Modifier) principle. Blocks and Elements are static and set by the developer that created the *Trowel component*.
 You will set the Modfiers (and the Element-modifiers) through the *Trowel variables*.
-But you can also set the syntax that will seperate each element of the selector. By default Trowel set the separator syntax as BEM preconise it :
+But you can also set the syntax that will separate each element of the selector. By default, Trowel set the separator syntax as BEM preconise it :
 
 ```
 // The default configuration for syntax separator
@@ -27,7 +27,7 @@ $trowel-config: (
 .btn__icon { ... }
 ```
 
-But you can totally change it into a bootstrap like syntax :
+But you can totally change it into a bootstrap-like syntax :
 
 ```
 $trowel-config: (
@@ -64,7 +64,7 @@ $trowel-config: (
 .c-btn__icon { ... }
 ```
 
-If the `prefix` key into the `$trowel-config` is setted as `null` no prefixes will be added to selectors :
+If the `prefix` key into the `$trowel-config` is set as `null`, no prefixes will be added to selectors :
 
 ```scss
 $trowel-config: (
@@ -84,7 +84,7 @@ $trowel-config: (
 ```
 
 ## Responsive breakpoints
-As we will see later, we can into a *Trowel variable* set a specific value to a property depending of the size of the viewport. But first we need through the `$trowel-config` variable to set responsive breakpoints that will be targeted into the *Trowel variables*.
+As we will see later, we can set a specific value to a property depending of the size of the viewport into a *Trowel variable*. But first, through the `$trowel-config` variable, we need  to set responsive breakpoints that will be targeted into the *Trowel variables*.
 
 ```scss
 // this is how we set the responsive breakpoints into the config variable
@@ -105,7 +105,7 @@ $trowel-config: (
 ```
 
 ## Set the `$trowel-config`
-Set the configuration to Trowel by setting the variable `$trowel-config` before the `@import` of `trowel-core`. Each key not defined will be setted by the default value listed below :
+Set the configuration to Trowel by setting the variable `$trowel-config` before the `@import` of `trowel-core`. Each key that is not defined will be set by the default value listed below :
 
 ```scss
 // Trowel config with all the default values
